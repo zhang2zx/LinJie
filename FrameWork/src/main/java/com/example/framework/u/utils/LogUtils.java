@@ -1,10 +1,8 @@
-package com.example.framework.utils;
+package com.example.framework.u.utils;
 
 import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
-
-import com.example.framework.BuildConfig;
 
 import java.io.BufferedWriter;
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.example.framework.utils;
+package com.example.framework.u.utils;
 
 public class TimeUtils {
     public static String formatDuring(long ms){
