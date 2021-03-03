@@ -20,9 +20,16 @@ public class LogUtils {
     private static SimpleDateFormat mSimpleDateFormat =
             new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-    public static void info (String text){
+    public static void i (String text){
         if(!TextUtils.isEmpty(text)){
             Log.i("LinJie3",text);
+            writeToFile(text);
+        }
+    }
+
+    public static void e(String text){
+        if(!TextUtils.isEmpty(text)){
+            Log.e("LinJie3",text);
             writeToFile(text);
         }
     }
