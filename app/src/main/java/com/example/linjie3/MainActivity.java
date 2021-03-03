@@ -25,5 +25,12 @@ public class MainActivity extends BaseUIActivity {
         MediaPlayerManager mediaPlayerManager = new MediaPlayerManager();
         AssetFileDescriptor fileDescriptor = getResources().openRawResourceFd(R.raw.music);
         mediaPlayerManager.startPlay(fileDescriptor);
+
+        mediaPlayerManager.setOnProgressListener(new MediaPlayerManager.OnMusicProgressListener() {
+            @Override
+            public void OnProgress(int progress,int pos) {
+                LogUtils.e("p:"+pos);
+            }
+        });
     }
 }
