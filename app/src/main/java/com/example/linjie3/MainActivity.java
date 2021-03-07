@@ -17,21 +17,21 @@ public class MainActivity extends BaseUIActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //logtest
-//        LogUtils.info("start");
-//        LogUtils.info(TimeUtils.formatDuring(System.currentTimeMillis()));
-//        SystemUI.fixUI(this);
+       //// logtest
+        LogUtils.i("start");
+        LogUtils.i(TimeUtils.formatDuring(System.currentTimeMillis()));
+        SystemUI.fixUI(this);
 
         //misuc test
-//        MediaPlayerManager mediaPlayerManager = new MediaPlayerManager();
-//        AssetFileDescriptor fileDescriptor = getResources().openRawResourceFd(R.raw.music);
-//        mediaPlayerManager.startPlay(fileDescriptor);
-//
-//        mediaPlayerManager.setOnProgressListener(new MediaPlayerManager.OnMusicProgressListener() {
-//            @Override
-//            public void OnProgress(int progress,int pos) {
-//                LogUtils.e("p:"+pos);
-//            }
-//        });
+        MediaPlayerManager mediaPlayerManager = new MediaPlayerManager();
+        AssetFileDescriptor fileDescriptor = getResources().openRawResourceFd(R.raw.music);
+        mediaPlayerManager.startPlay(fileDescriptor);
+
+        mediaPlayerManager.setOnProgressListener(new MediaPlayerManager.OnMusicProgressListener() {
+            @Override
+            public void OnProgress(int progress,int pos) {
+                LogUtils.e("p:"+pos);
+            }
+        });
     }
 }

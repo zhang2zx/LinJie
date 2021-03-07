@@ -1,4 +1,6 @@
 package com.example.linjie3.UI;
 
-public class GuideActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class GuideActivity extends AppCompatActivity {
 }

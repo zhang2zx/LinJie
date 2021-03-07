@@ -17,20 +17,19 @@
         <activity android:name=".UI.IndexActivity"
             android:theme="@style/AppThemeFull">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.catagory.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-
-
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".UI.LoginActivity"/>
+        <activity android:name=".UI.GuideActivity"/>
+
+        <!--主页-->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>
